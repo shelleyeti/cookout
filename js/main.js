@@ -30,18 +30,20 @@ const foods = [hamburger, zucchini, chickenBreast, corn, steak];
 
 const cookedFood = [];
 
+//shelley's method
+function grill (currentObject) {
+    currentObject.cooked = true;
+    cookedFood.push(currentObject);
+};
 
-// function grill (currentObject) {
-//     currentObject.cooked = true;
-//     cookedFood.push(currentObject);
-// };
-
-// grill(steak);
-// grill(corn);
-// console.log(cookedFood);
+grill(steak);
+grill(corn);
+console.log(cookedFood);
 
 
-function grill(foodarray) {
+
+//manually changed some items to cooked=true
+function grilled(foodarray) {
     for (let i = 0; i < foodarray.length; i++) {
         if (foodarray[i].cooked === true) {
             cookedFood.push(foodarray[i]);
@@ -49,12 +51,14 @@ function grill(foodarray) {
     }
 }
 
-grill(foods);
+grilled(foods);
 console.log("all food", foods);
 console.log("cooked food", cookedFood);
 
 
-// Splice
+
+
+// // Splice
 // function grilling(i) {
 //     i.cooked = true;
 //     cookedFood.push(i);
@@ -64,4 +68,4 @@ console.log("cooked food", cookedFood);
 //     }
 // }
 // grilling(hamburger);
-// console.log(cookedFood)
+// console.log("spliced", cookedFood)
