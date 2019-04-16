@@ -1,1 +1,3 @@
-#Cookout from practice
+Cookout from practice
+
+Function to iterate through an object
